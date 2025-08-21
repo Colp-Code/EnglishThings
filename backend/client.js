@@ -1,13 +1,22 @@
-async function obtenerDatos() {
-  try {
-    const response = await fetch('http://localhost:3000/api/datos');
-    const data = await response.json();
+const express = require('express');
+const cors = require('cors');
+const connection = require('./db');
 
-    console.log("Datos recibidos de la API:");
-    console.log(data);
-  } catch (error) {
-    console.error("Error al consumir la API:", error);
-  }
-}
+const app = express();
+const PORT = 3000;
 
-obtenerDatos();
+app.use(cors());
+app.use(express.json());
+
+app.post('/datos',(res, req) => {
+    const { word, translation, phase } = req.body;
+    if (!word || !translation || !phase){
+        res.status(400).json({ error: 'Faltan datos' });
+        return;
+    }
+});
+
+connection.query(
+  'INSERT INTO users (word, translation, phrase) VALUES (?, ?, ?)',
+  [word, translation, phrase],
+)
