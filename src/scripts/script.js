@@ -3,6 +3,7 @@ const translation = document.getElementById('translationInput')
 const phrase = document.getElementById('phraseInput')
 const button = document.getElementById('sendButton')
 const getButton = document.getElementById('getButton')
+const wordList = document.getElementById('wordList')
 
 
 button.addEventListener('click', () => {
@@ -26,7 +27,14 @@ getButton.addEventListener('click', async () => {
         const fetchD = await fetch('http://localhost:3000/datos')
         const data = await fetchD.json()
         console.log(data)
+        wordList.innerHTML = ''
+        data.data.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `Word: ${item.word} | Translation: ${item.translation} | Phrase: ${item.phrase}`;
+        wordList.appendChild(li);
+    });
     }catch (error) {
         console.error('Error fetching data:', error)
     }
 })
+
