@@ -1,3 +1,7 @@
-*{
-    
+.wordTable{
+    width: 100%;
+    border-collapse: collapse 1px solid black;
+}
+th{
+    background-color: lightgreen;
 }
