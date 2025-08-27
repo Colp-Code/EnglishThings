@@ -1,5 +1,5 @@
 :root{
-    --gradient-blue: linear-gradient(to bottom, #211C32,100%,#224C61);
+    --gradient-blue: linear-gradient(to bottom, #211C32,50%,#212A3D);
 }
 *{
     padding: 0;
@@ -28,12 +28,21 @@ body{
 
 header h1{
     font-size: 7rem;
+    font-weight: 100;
 }
 
 .line{
-    width: 50%;
+    margin-top: -25px;
+    width: 45%;
     height: 1px;
     background-color: white;
+    margin-bottom: -5px;
+}
+
+.subtitle{
+    font-size: 1.42rem;
+    margin-top: 10px;
+    font-weight: 100;
 }
 
 .circle-1{
