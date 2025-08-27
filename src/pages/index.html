@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnglishThings</title>
-    <link rel="stylesheet" href="/src/styles/styles.css">
-    
-</head>
-<body>
-    <h1>Hello!</h1>
-    <p>Welcome to EnglishThings.</p>
-    <p>This page was created because i want to save my vocabulary that I'll learn over time In addition I'll create stories and paragraphs about my daily life</p>
-    <p>First I'm going to build a one button. it is send to SQL a message</p>
-    <h2>Type the word</h2>
-    <p>Write your word in the input below</p>
-    <input type="text" placeholder="type your word here" id="wordInput">
-    <p>Now type your translation below</p>
-    <input type="text" placeholder="Translation" id="translationInput">
-    <p>Type a phrase</p>
-    <input type="text" placeholder="Type your phrase here" id="phraseInput">
-    <p>Now, here is a button that sends the text you entered here</p>
-    <button id="sendButton">Send</button>
-    <button id="getButton">get</button>
-    <ul id="wordList"></ul>
-    <table class="wordTable" id="wordTable">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EnglishThings</title>
+        <link rel="stylesheet" href="/src/styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="circle-2">
+                    <div class="circle-1">
+                        <h1>Hello!</h1>
+                        <div class="line"></div>
+                        <p>Welcome to EnglishThings.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <p>This page was created because i want to save my vocabulary that I'll learn over time In addition I'll create stories and paragraphs about my daily life</p>
+        <p>First I'm going to build a one button. it is send to SQL a message</p>
+        <h2>Type the word</h2>
+        <p>Write your word in the input below</p>
+        <input type="text" placeholder="type your word here" id="wordInput">
+        <p>Now type your translation below</p>
+        <input type="text" placeholder="Translation" id="translationInput">
+        <p>Type a phrase</p>
+        <input type="text" placeholder="Type your phrase here" id="phraseInput">
+        <p>Now, here is a button that sends the text you entered here</p>
+        <button id="sendButton">Send</button>
+        <button id="getButton">get</button>
+        <ul id="wordList"></ul>
+        <table class="wordTable" id="wordTable">
 
-    </table>
+        </table>
 
-    <script src="/src/scripts/script.js"></script>
-</body>
+        <script src="/src/scripts/script.js"></script>
+    </body>
 </html>

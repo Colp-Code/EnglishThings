@@ -1,7 +1,73 @@
+:root{
+    --gradient-blue: linear-gradient(to bottom, #211C32,100%,#224C61);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: var(--gradient-blue);
+    color: white;
+    font-family:'Nunito', sans-serif;
+    font-weight: 100;
+}
+
+header h1{
+    font-size: 7rem;
+}
+
+.line{
+    width: 50%;
+    height: 1px;
+    background-color: white;
+}
+
+.circle-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 40em;
+    height: 40em;
+    text-align: center;
+    padding: 20px;
+}
+
+.circle-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 50%;
+    width: 88em;
+    height: 88em;
+}
 .wordTable{
     width: 100%;
-    border-collapse: collapse 1px solid black;
+    border-collapse: collapse
 }
 th{
-    background-color: lightgreen;
+    background-color: var(--main-color-title);
+}
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
 }
