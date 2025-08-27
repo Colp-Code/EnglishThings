@@ -11,6 +11,7 @@
 body{
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 .header-content{
@@ -68,6 +69,28 @@ header h1{
     width: 88em;
     height: 88em;
 }
+
+.body-content{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: var(--gradient-blue);
+    color: white;
+
+}
+
+.body-form{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background:var(--gradient-blue);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
 .wordTable{
     width: 100%;
     border-collapse: collapse
